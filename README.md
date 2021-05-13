@@ -49,4 +49,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## 🤝 Contributing
  Contributions, issues and feature requests are welcome!
 
-Show your support Give a ⭐️ if you like this project!
+## Show your support 
+Give a ⭐️ if you like this project!
