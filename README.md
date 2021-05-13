@@ -1,11 +1,10 @@
 # REACT CALCULATOR
 
-This is a simple calculator built with React by using React classes, this project is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple calculator built with React by using React classes, it is bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-```
-This project has 4 milestones:-
+This project has 4 milestones
 - The first milestone: The first step emphasizes on the project setup, by removing the unnecessary files created by the create-react-app, setting up linters for creating error free PRs.
-```
+
 
 ## Built With
 - React
@@ -47,6 +46,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 - Linkedin: [@okikiola-apelehin](https://www.linkedin.com/in/okikiola-apelehin-459008122/)
 
 
-🤝 Contributing Contributions, issues and feature requests are welcome!
+## 🤝 Contributing
+ Contributions, issues and feature requests are welcome!
 
 Show your support Give a ⭐️ if you like this project!
