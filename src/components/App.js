@@ -1,10 +1,10 @@
-import DisplayCalculator from './displayCalculator';
-import ButtonPanel from './buttonPanel';
+import DisplayCalculator from './DisplayCalculator';
+import ButtonPanel from './ButtonPanel';
 
 const App = () => (
   <div className="App">
-    <h2>Hello World!!</h2>
-    <DisplayCalculator result="hello" />
+    <h2>React Calculator!!</h2>
+    <DisplayCalculator />
     <ButtonPanel />
   </div>
 );
