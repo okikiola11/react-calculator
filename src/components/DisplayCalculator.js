@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Button from './Button';
 
 const DisplayCalculator = (props) => {
   const { result } = props;
@@ -8,7 +7,6 @@ const DisplayCalculator = (props) => {
     <div className="display">
       <h1>{result}</h1>
       <div> Display Result </div>
-      <Button />
     </div>
   );
 };

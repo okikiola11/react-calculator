@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 
 const Button = ({ name }) => (
-  <button type="button" name={name}> Submit </button>
+  <button type="button" name={name}>
+    {name}
+  </button>
 );
 
 Button.propTypes = {
