@@ -3,7 +3,7 @@ import ButtonPanel from './ButtonPanel';
 
 const App = () => (
   <div className="App">
-    <h2>React Calculator!!</h2>
+    <h2>My React Calculator!!!</h2>
     <DisplayCalculator />
     <ButtonPanel />
   </div>

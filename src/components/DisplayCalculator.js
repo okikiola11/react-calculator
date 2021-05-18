@@ -7,7 +7,7 @@ const DisplayCalculator = (props) => {
   return (
     <div className="display">
       <h1>{result}</h1>
-      <div> Show Components </div>
+      <div> Display Result </div>
       <Button />
     </div>
   );
