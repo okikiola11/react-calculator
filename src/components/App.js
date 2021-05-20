@@ -3,13 +3,11 @@ import ButtonPanel from './ButtonPanel';
 import Calculate from '../logic/calculate';
 
 const App = () => (
-  <div className="App">
-    <>
-      <DisplayCalculator />
-      <ButtonPanel />
-      <Calculate />
-    </>
-  </div>
+  <>
+    <DisplayCalculator />
+    <ButtonPanel />
+    <Calculate />
+  </>
 );
 
 export default App;
