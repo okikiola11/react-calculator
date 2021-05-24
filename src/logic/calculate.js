@@ -1,6 +1,6 @@
-import Operate from './operate';
+import operate from './operate';
 
-const Calculate = (dataObj, buttonName) => {
+const calculate = (dataObj, buttonName) => {
   let { total, next, operation } = dataObj;
   const operators = ['+', '÷', 'x', '-', '%'];
 
@@ -12,13 +12,13 @@ const Calculate = (dataObj, buttonName) => {
     next = null;
     operation = null;
   } else if (operators.includes(buttonName)) {
-    Operate(total, next, operation);
+    operate(total, next, operation);
   } else if (buttonName === '.' && next) {
     if (!next.includes('.')) {
-      next = next.concat('.');
+      next = next.trim('').concat('.');
     }
   } else if ((buttonName === '=') && (next && total)) {
-    total = Operate(total, next, operation);
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   }
@@ -26,4 +26,4 @@ const Calculate = (dataObj, buttonName) => {
   return [total, next, operation];
 };
 
-export default Calculate;
+export default calculate;

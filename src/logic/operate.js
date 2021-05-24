@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-const Operate = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation) => {
   const num1 = Big(numberOne);
   const num2 = Big(numberTwo);
   let result;
@@ -21,6 +21,7 @@ const Operate = (numberOne, numberTwo, operation) => {
     result = num1.mod(num2).toString();
   }
   return result;
+  console.log(result)
 };
 
-export default Operate;
+export default operate;
