@@ -21,7 +21,6 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.mod(num2).toString();
   }
   return result;
-  console.log(result)
 };
 
 export default operate;
