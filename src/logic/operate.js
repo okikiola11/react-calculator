@@ -18,7 +18,7 @@ const operate = (numberOne, numberTwo, operation) => {
     result = num1.div(num2).toString();
   }
   if (operation === '%') {
-    result = num1.mod(num2).toString();
+    result = ((num1 * num2) / 100).toString();
   }
   return result;
 };
