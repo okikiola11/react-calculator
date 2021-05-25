@@ -11,7 +11,7 @@ const GroupButtons = {
 const buttons = Object.keys(GroupButtons);
 
 const ButtonPanel = () => buttons.map((item, i) => (
-  <main key={item[i]} className="buttons">
+  <main key={`item-${(i + 1)}`} className="buttons">
     {GroupButtons[item].map((buttons) => <Button key={buttons} name={buttons} />)}
   </main>
 ));

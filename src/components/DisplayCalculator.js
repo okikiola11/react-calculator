@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const DisplayCalculator = (props) => {
+const displayCalculator = (props) => {
   const { result } = props;
 
   return (
@@ -11,12 +11,12 @@ const DisplayCalculator = (props) => {
   );
 };
 
-DisplayCalculator.propTypes = {
+displayCalculator.propTypes = {
   result: PropTypes.string,
 };
 
-DisplayCalculator.defaultProps = {
+displayCalculator.defaultProps = {
   result: '0',
 };
 
-export default DisplayCalculator;
+export default displayCalculator;
