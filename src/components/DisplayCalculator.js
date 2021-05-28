@@ -6,7 +6,7 @@ const displayCalculator = (props) => {
   return (
     <div className="display">
       <h1>{result}</h1>
-      <div> Display Result </div>
+      {/* <div> Display Result </div> */}
     </div>
   );
 };
