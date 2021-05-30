@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 const Button = (props) => {
   const { name, clickHandler } = props;
 
+  const handleClick = (buttonName) => clickHandler(buttonName);
+
   return (
     <>
-      <button onClick={() => clickHandler(name)} type="button" name={name}>
+      <button onClick={() => handleClick(name)} type="button">
         {name}
       </button>
     </>
@@ -14,12 +16,12 @@ const Button = (props) => {
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   clickHandler: PropTypes.func.isRequired,
 };
 
-Button.defaultProps = {
-  name: '',
-};
+// Button.defaultProps = {
+//   name: '',
+// };
 
 export default Button;
