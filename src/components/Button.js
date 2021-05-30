@@ -20,8 +20,4 @@ Button.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
 
-// Button.defaultProps = {
-//   name: '',
-// };
-
 export default Button;
