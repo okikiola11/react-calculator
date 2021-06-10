@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const FlexDisplay = styled.section`
-  background-color: gray;
+  background-color: #D1A7A0;
   height: 100px;
   font-weight: bold;
+  font-size: 2rem;
   padding: 30px;
-  color: #ffffff;
+  color: #000000;
   text-align: right;
+  border-radius: 3px;
 `;
 
 const displayCalculator = (props) => {

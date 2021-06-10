@@ -7,8 +7,10 @@ import calculate from '../logic/calculate';
 const Flex = styled.section`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   font-family: sans-serif;
   width: 700px;
+  margin: auto;
 `;
 
 const App = () => {
@@ -21,7 +23,6 @@ const App = () => {
   const handleClick = (buttonName) => {
     const result = calculate(state, buttonName);
     setState(result);
-    console.log(setState);
   };
 
   const { total, next } = state;
