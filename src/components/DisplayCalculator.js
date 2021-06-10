@@ -1,14 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const FlexDisplay = styled.section`
+  background-color: gray;
+  height: 100px;
+  font-weight: bold;
+  padding: 30px;
+  color: #ffffff;
+  text-align: right;
+`;
 
 const displayCalculator = (props) => {
   const { result } = props;
 
   return (
-    <div className="display">
-      <h1>{result}</h1>
-      {/* <div> Display Result </div> */}
-    </div>
+    <FlexDisplay>
+      <div className="display">
+        <h1>{result}</h1>
+        {/* <div> Display Result </div> */}
+      </div>
+    </FlexDisplay>
   );
 };
 

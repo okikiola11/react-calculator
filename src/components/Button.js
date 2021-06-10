@@ -6,9 +6,17 @@ const Button = (props) => {
 
   const handleClick = (buttonName) => clickHandler(buttonName);
 
+  const styles = {
+    width: '25%',
+  };
+
   return (
     <>
-      <button onClick={() => handleClick(name)} type="button">
+      <button
+        onClick={() => handleClick(name)}
+        type="button"
+        style={name === 0 ? 'null' : styles}
+      >
         {name}
       </button>
     </>
