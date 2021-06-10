@@ -1,21 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import * as styles from './button.module.css';
 
 const Button = (props) => {
-  const { name, clickHandler } = props;
+  const {
+    name, clickHandler, color,
+  } = props;
 
   const handleClick = (buttonName) => clickHandler(buttonName);
-
-  const styles = {
-    width: '25%',
-  };
 
   return (
     <>
       <button
         onClick={() => handleClick(name)}
         type="button"
-        style={name === 0 ? 'null' : styles}
+        className={`${styles.button} ${color ? styles.grayColor : styles.orangeColor} `}
       >
         {name}
       </button>
@@ -26,6 +25,11 @@ const Button = (props) => {
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   clickHandler: PropTypes.func.isRequired,
+  color: PropTypes.bool,
+};
+
+Button.defaultProps = {
+  color: false,
 };
 
 export default Button;
