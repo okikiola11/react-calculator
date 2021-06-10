@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import Button from '../button/Button';
+import styles from './buttonPanel.module.css';
 
 const ButtonPanel = (props) => {
   const GroupButtons = {
@@ -12,18 +13,22 @@ const ButtonPanel = (props) => {
   };
   const buttons = Object.keys(GroupButtons);
 
+  const orangeBtns = ['÷', 'x', '-', '+', '='];
+
   const handleClick = (buttonName) => {
     props.clickHandler(buttonName);
   };
   return (
     <>
       {buttons.map((item, i) => (
-        <main key={`item-${(i + 1)}`} className="buttons">
+        <main key={`item-${(i + 1)}`} className={styles.buttons}>
           {GroupButtons[item].map((button) => (
             <Button
               key={button}
               name={`${button}`}
               clickHandler={handleClick}
+              wide={button === '0'}
+              color={!orangeBtns.includes(button)}
             />
           ))}
         </main>

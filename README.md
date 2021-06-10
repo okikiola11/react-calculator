@@ -30,6 +30,9 @@ $ cd react-calculator
 ## Live link
 Click <a href="https://my-react-ccalculator.herokuapp.com/">My react calculator</a>
 
+## Screenshot
+![screenshot](src/images/screenshot.png)
+
 ## Available Scripts
 
 Inorder to use the applicaton in the project directory, you can run:
