@@ -4,6 +4,15 @@ import DisplayCalculator from './DisplayCalculator';
 import ButtonPanel from './buttonPanel/ButtonPanel';
 import calculate from '../logic/calculate';
 
+const Wrapper = styled.section`
+  display: flex;
+  width: 100%;
+`;
+
+const TextContent = styled.section`
+  width: 400px;
+`;
+
 const Flex = styled.section`
   display: flex;
   flex-direction: column;
@@ -30,10 +39,15 @@ const App = () => {
 
   return (
     <>
-      <Flex>
-        <DisplayCalculator result={result} />
-        <ButtonPanel clickHandler={handleClick} />
-      </Flex>
+      <Wrapper>
+        <TextContent>
+          <div>Let‘s do some Math!</div>
+        </TextContent>
+        <Flex>
+          <DisplayCalculator result={result} />
+          <ButtonPanel clickHandler={handleClick} />
+        </Flex>
+      </Wrapper>
     </>
   );
 };
