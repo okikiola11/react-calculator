@@ -13,7 +13,7 @@ const FlexDisplay = styled.section`
   border-radius: 3px;
 `;
 
-const displayCalculator = (props) => {
+const DisplayCalculator = (props) => {
   const { result } = props;
 
   return (
@@ -26,12 +26,12 @@ const displayCalculator = (props) => {
   );
 };
 
-displayCalculator.propTypes = {
+DisplayCalculator.propTypes = {
   result: PropTypes.string,
 };
 
-displayCalculator.defaultProps = {
+DisplayCalculator.defaultProps = {
   result: '0',
 };
 
-export default displayCalculator;
+export default DisplayCalculator;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display Calculator matches snapshot 1`] = `
+<section
+  className="sc-bdnxRM hLccjP"
+>
+  <div
+    className="display"
+  >
+    <h1>
+      9
+    </h1>
+  </div>
+</section>
+`;
