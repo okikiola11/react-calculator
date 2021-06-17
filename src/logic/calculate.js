@@ -1,20 +1,22 @@
 import operate from './operate';
 
-const calculate = (dataObj, buttonName) => {
-  let { total, next, operation } = dataObj;
-  const operators = ['+', '÷', 'x', '-', '%'];
-
+const calculate = (dataObject, buttonName) => {
+  const operators = ['+', '-', '÷', 'x', '%'];
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+  let { total, next, operation } = dataObject;
+
   if (buttonName === '+/-') {
-    if (next !== null) {
-      next *= (-1).toString();
-    } else {
-      total *= (-1).toString();
+    if (next) {
+      next = (-1 * parseFloat(next)).toString();
+    }
+    if (total) {
+      total = (-1 * parseFloat(total)).toString();
     }
   }
 
   if (buttonName === '=' && next && total && operation) {
-    total = operate(total, next, operation).toString();
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   }
@@ -37,12 +39,6 @@ const calculate = (dataObj, buttonName) => {
     }
   }
 
-  if (buttonName === 'AC') {
-    total = null;
-    next = null;
-    operation = null;
-  }
-
   if (buttonName === '.') {
     if (next) {
       if (next.includes('.')) {
@@ -50,6 +46,12 @@ const calculate = (dataObj, buttonName) => {
       }
       next += '.';
     }
+  }
+
+  if (buttonName === 'AC') {
+    total = null;
+    next = null;
+    operation = null;
   }
 
   if (numbers.includes(buttonName)) {
