@@ -14,10 +14,11 @@ This project has 5 milestones
 - React
 - JSX
 - JavaScript ES6
-- ESLINT & STLYELINT
-- Webpack
 - CSS
 - Heroku
+- Jest
+- React testing library
+- ESLINT & STLYELINT
 
 ## Getting Started
 ```
@@ -25,6 +26,7 @@ This project has 5 milestones
 $ git clone https://github.com/okikiola11/react-calculator.git
 
 $ cd react-calculator
+$ npm start
 ```
 
 ## Live link
@@ -55,7 +57,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 - Github: [@okikiola11](https://github.com/okikiola11)
 - Twitter: [@Kikiolla3](https://twitter.com/Kikiolla3)
-- Linkedin: [@okikiola-apelehin](https://www.linkedin.com/in/okikiola-apelehin-459008122/)
+- LinkedIn: [@okikiola-apelehin](https://www.linkedin.com/in/okikiola-apelehin-459008122/)
 
 
 ## 🤝 Contributing
