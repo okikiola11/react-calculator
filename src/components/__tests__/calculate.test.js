@@ -2,10 +2,10 @@ import calculate from '../../logic/calculate';
 
 const buttonsArray = (buttons) => {
   const value = {};
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     Object.assign(value, calculate(value, button));
   });
-  Object.keys(value).forEach(key => {
+  Object.keys(value).forEach((key) => {
     if (value[key] === null) {
       delete value[key];
     }
@@ -13,7 +13,7 @@ const buttonsArray = (buttons) => {
   return value;
 };
 
-describe("The calculate function", () => {
+describe('The calculate function', () => {
   it('should clear the operator when AC is pressed', () => {
     expect(buttonsArray(['4', '+', '9', 'AC'], '+')).toEqual({});
   });
@@ -96,7 +96,6 @@ describe("The calculate function", () => {
       next: '93',
     });
   });
-
 
   it('should not concatenate two leading zeros', () => {
     expect(buttonsArray(['0', '0'])).not.toEqual({
